@@ -4,30 +4,40 @@
 <head>
   <title>EpsilonTheatrics.com</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-  <div class="header">
-    <h2 class="header-text">EpsilonTheatrics.com is currently under construction...</h2>
-    <h4 class="header-text">The following information may not reflect the most recent information until after
-      development concludes.</h4>
-  </div>
-  <div class="content">
-    <h4 class="content-text">EpsilonTheatrics is small theater tech startup created by Finlay Christ. We are in the
-      process of developing two main peices of software. PowerCues which is a theater control program capable of
-      controlling lights over DMX using various usb to DMX controllers including the ETC Gadget II and any open DMX
-      enabled controller. And EZPatch an IOS/Android app for easily inputting patching information on your phone and
-      then sending it to PowerCues.</h4>
+  <header>
+    <h1 class="black-text" style="font-size: 23pt; margin: 5px;">EpsilonTheatrics.com is currently under construction...</h1>
+    <h2 class="black-text" style="margin: 5px;">The following information may not be accurate until after development concludes.</h2>
+  </header>
+  <main>
+    <div class="header-spacer"></div>
     <br />
-    <h4 class="content-text">Development Update 2/4/2024: Project is still in active development but funding is tight
-      and DMX hardware is expensive. Development will continue more officially when I can afford an ETC Nomad.</h4>
+    <p>
+      EpsilonTheatrics is small theater tech startup created by Finlay Christ.
+      We are in the process of developing a peice of software called PowerCues which will allow users to program theater lighting cues with JavaScript.
+      PowerCues currently supports the ETC Gadget DMX interface and we plan to support more in interfaces in the future.
+      PowerCues is an EMCAScript complient JavaScript engine built on <a href="https://v8.dev/">Google's V8 JavaScript engine</a>.
+      Development is slow due to college classwork taking my time but I am dedicated to this project.
+      In the end I hope that users will be able to define cues and animations to set up their lights exacly how they need them and then replay those animations during showtime!
+      If you are intrested in supporting me in this project or have questions please reach out at <a href="mailto:epsilontheatrics@gmail.com">EpsilonTheatrics@gmail.com</a>.
+    </p>
     <br />
-    <h4 class="content-text">For buisness inquires please contact: <a
-        href="mailto:epsilontheatrics@gmail.com">EpsilonTheatrics@gmail.com</a></h4>
-  </div>
-  <div class="footer">
-    <h5>Hosted by <a href="https://pages.github.com">Github Pages</a>.</h5>
-  </div>
+    <p>
+      Development Update 11/18/2024: I managed to afford an ETC Nomad. From there I was able to reverse engineer the communication protocol used by the ETC Gadget over USB and reimplamented it in my own driver.
+      PowerCues can now officially send dmx states over usb to lights! Next I compiled and set up the V8 JavaScript engine and got it working in a simple testing enviroment. So you can officially control lights with JavaScript.
+      There is much work to be done before this PowerCues will be ready for use in a real theatrical production but I'm very happy with current progress. My future plans are to fix bugs in the main engine and ensure it is stable then get to work on the animation and cue system.
+    </p>
+    <br />
+    <p>
+      Development Update 2/4/2024: Project is still in active development but funding is tight and DMX hardware is expensive. Development will continue more officially when I can afford an ETC Nomad.
+    </p>
+  </main>
+  <footer>
+    <h1 class="black-text" style="margin: 5px;">Hosted by <a href="https://pages.github.com">Github Pages</a>.</h1>
+  </footer>
 </body>
 
 </html>
